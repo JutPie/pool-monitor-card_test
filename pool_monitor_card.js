@@ -451,7 +451,7 @@ class PoolMonitorCard extends LitElement {
 
     newData.name = name;
     newData.title = config.show_names ? title : html`&nbsp;`;
-    newData.img_src ="https://raw.githubusercontent.com/wilsto/pool-monitor-card/master/resources/"+ name +".png"
+    newData.img_src ="https://raw.githubusercontent.com/jutpie/pool-monitor-card_test/master/resources/"+ name +".png"
     newData.value = parseFloat(this.hass.states[entity].state);
     newData.entity = entity;
     newData.last_updated = this.timeFromNow(this.hass.states[entity].last_updated, config.language);
